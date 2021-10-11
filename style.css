@@ -1,0 +1,40 @@
+
+.grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color:bisque;
+        padding: 10px;
+    }
+    body{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        
+    }
+    
+    img{
+        width: 10%;
+        height: 20%;
+    }
+    
+    header{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    
+    main{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        
+    }
+    
+    @media (max-width:600px)
+    {main{
+        grid-template-columns: auto;
+        row-gap: 1rem;
+    }}
+    
+    
+    footer{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
